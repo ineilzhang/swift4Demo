@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  basicOperators.swift
 //  Swift4Demo
 //
 //  Created by Neil Zhang on 2017/10/10.
@@ -7,6 +7,4 @@
 //
 
 import Foundation
-
-basicsDemo()
 
