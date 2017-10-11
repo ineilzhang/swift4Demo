@@ -8,5 +8,15 @@
 
 import Foundation
 
-basicsDemo()
+//basicsDemo()
+
+//operatorDemo()
+
+//stringsAndCharactersDemo()
+
+//collectionTypesDemo()
+
+//controlFlowDemo()
+
+palyAAGame()
 
