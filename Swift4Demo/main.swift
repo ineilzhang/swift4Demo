@@ -18,5 +18,31 @@ import Foundation
 
 //controlFlowDemo()
 
-palyAAGame()
+//palyAAGame()
+
+//repeatWhile()
+
+//switchDemo()
+
+//guardDemo()
+
+//print(greet(person: "person"))
+
+//if let bounds = minMax(array: [8, -6, 2, 109, 3, 71]) {
+//    print("min is \(bounds.min) and max is \(bounds.max)")
+//}
+
+//functionTypeDemo()
+
+//funcTypeReturnDemo()
+
+//nestedFunctionDemo()
+
+//closuresDemo()
+
+//capturingValuesDemo()
+
+//escapeingClosuresDemo()
+
+atuoClosures()
 
