@@ -16,6 +16,9 @@
 		D9BAE6581F8F065C00BB78C1 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAE6571F8F065C00BB78C1 /* Functions.swift */; };
 		D9BAE65A1F8F1BFC00BB78C1 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAE6591F8F1BFC00BB78C1 /* Closures.swift */; };
 		D9BAE65C1F8F745200BB78C1 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAE65B1F8F745200BB78C1 /* Enumerations.swift */; };
+		D9BAE65E1F9063C600BB78C1 /* ClassesAndStructrues.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAE65D1F9063C600BB78C1 /* ClassesAndStructrues.swift */; };
+		D9BAE6601F90933B00BB78C1 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAE65F1F90933B00BB78C1 /* Properties.swift */; };
+		D9BAE6621F94A5E700BB78C1 /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAE6611F94A5E700BB78C1 /* Methods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +44,9 @@
 		D9BAE6571F8F065C00BB78C1 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		D9BAE6591F8F1BFC00BB78C1 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 		D9BAE65B1F8F745200BB78C1 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
+		D9BAE65D1F9063C600BB78C1 /* ClassesAndStructrues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesAndStructrues.swift; sourceTree = "<group>"; };
+		D9BAE65F1F90933B00BB78C1 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		D9BAE6611F94A5E700BB78C1 /* Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,9 @@
 				D9BAE6571F8F065C00BB78C1 /* Functions.swift */,
 				D9BAE6591F8F1BFC00BB78C1 /* Closures.swift */,
 				D9BAE65B1F8F745200BB78C1 /* Enumerations.swift */,
+				D9BAE65D1F9063C600BB78C1 /* ClassesAndStructrues.swift */,
+				D9BAE65F1F90933B00BB78C1 /* Properties.swift */,
+				D9BAE6611F94A5E700BB78C1 /* Methods.swift */,
 			);
 			path = Swift4Demo;
 			sourceTree = "<group>";
@@ -148,9 +157,12 @@
 				D9BAE65A1F8F1BFC00BB78C1 /* Closures.swift in Sources */,
 				D9BAE65C1F8F745200BB78C1 /* Enumerations.swift in Sources */,
 				D9BAE6561F8E18F400BB78C1 /* ControlFlow.swift in Sources */,
+				D9BAE6621F94A5E700BB78C1 /* Methods.swift in Sources */,
 				D9BAE64E1F8CD04100BB78C1 /* Basics.swift in Sources */,
+				D9BAE65E1F9063C600BB78C1 /* ClassesAndStructrues.swift in Sources */,
 				D9BAE6581F8F065C00BB78C1 /* Functions.swift in Sources */,
 				D9BAE6521F8DC8D700BB78C1 /* StringsAndCharacters.swift in Sources */,
+				D9BAE6601F90933B00BB78C1 /* Properties.swift in Sources */,
 				D9BAE6541F8E06A200BB78C1 /* CollectionTypes.swift in Sources */,
 				D9BAE6471F8CB6FE00BB78C1 /* main.swift in Sources */,
 			);

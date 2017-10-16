@@ -44,5 +44,19 @@ import Foundation
 
 //escapeingClosuresDemo()
 
-atuoClosures()
+//atuoClosures()
+
+//enumerationsDemo()
+
+//classAndStructDemo()
+
+//PropertiesDemo()
+
+//CounterDemo()
+
+//selfDemo()
+
+//modifyingValueTypesDemo()
+
+selfMutatingDemo()
 
