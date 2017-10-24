@@ -97,5 +97,61 @@ func selfMutatingDemo() {
     print(ovenLight)
 }
 
+//MARK: - Type Method
 
+class SomeClassNew {
+    class func someTypeMethod() {
+        print("Here is a class type method")
+    }
+}
+
+func classTypeMethodDemo() {
+    SomeClassNew.someTypeMethod()
+}
+
+
+//MARK: - LevelTrackerDemo
+
+struct LevelTracker {
+    static var highestUnlockedLevel = 1
+    var currentLevel = 1
+    
+    static func unlock(_ level:Int) {
+        if level > highestUnlockedLevel {
+            highestUnlockedLevel = level
+        }
+    }
+    
+    static func isUnlock(_ level:Int) -> Bool {
+        return level <= highestUnlockedLevel
+    }
+    
+    @discardableResult
+    mutating func advance(to level:Int) -> Bool {
+        if LevelTracker.isUnlock(level) {
+            currentLevel = level
+            return true
+        }else{
+            return false
+        }
+    }
+}
+
+class Player {
+    var tracker = LevelTracker()
+    let playerName: String
+    func complete(level:Int) {
+        LevelTracker.unlock(level + 1)
+        tracker.advance(to: level + 1)
+    }
+    init(name: String) {
+        playerName = name;
+    }
+}
+
+func levelTrackerDemo() {
+    var player = Player(name: "HaHe")
+    player.complete(level: 5)
+    print("highestUnlockedLevel=\(LevelTracker.highestUnlockedLevel)\ncurrentLevel=\(player.tracker.currentLevel)\nplayer.tracker.advance.to.6=\(player.tracker.advance(to: 6))")
+}
 

@@ -58,5 +58,41 @@ import Foundation
 
 //modifyingValueTypesDemo()
 
-selfMutatingDemo()
+//selfMutatingDemo()
+
+//classTypeMethodDemo()
+
+//levelTrackerDemo()
+
+//subscriptDemo()
+
+//matixDemo()
+
+//baseClassDemo()
+
+//subclassDemo()
+
+//tandemDemo()
+
+//trainDemo()
+
+//fahrenheitDemo()
+
+//celsiusDemo()
+
+//colorDemo()
+
+//surveyDemo()
+
+//constantPropInitDemo()
+
+//defaultInitializerDemo()
+
+//memberwiseInitializerDemo()
+
+//superInitDemo()
+
+//initializerInheritanceAndOverriding()
+
+designatedAndConvenienceInitializerDemo()
 
