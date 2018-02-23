@@ -321,7 +321,133 @@ func designatedAndConvenienceInitializerDemo() {
     print(recipe.name)
     let recipe1 = RecipeIngredient(name: "bacon", quantity: 1)
     print(recipe1.name)
+    var breakfastList = [
+        ShoppingListItemNew(),
+        ShoppingListItemNew(name: "bacon"),
+        ShoppingListItemNew(name: "egg", quantity: 10)
+    ]
+    breakfastList[0].name = "Orange juice"
+    breakfastList[1].purchased = true
+    for item in breakfastList {
+        print(item.description)
+    }
 }
 
+class ShoppingListItemNew: RecipeIngredient {
+    var purchased = false
+    var description: String {
+        var output = "\(quantity) x \(name)"
+        output += purchased ? " ✔" : " ✘"
+        return output
+    }
+}
 
+//MARK: - Failable Initializers
+
+struct Animal {
+    let species: String
+    init?(species: String) {
+        if species.isEmpty { return nil }
+        self.species = species
+    }
+}
+
+enum TemperatureUnit {
+    case kelvin, celsius, fahrenheit
+    init?(symbol: Character) {
+        switch symbol {
+        case "K":
+            self = .kelvin
+        case "C":
+            self = .celsius
+        case "F":
+            self = .fahrenheit
+        default:
+            return nil
+        }
+    }
+}
+
+enum TemperatureUnitChar: Character {
+    case kelvin = "K", celsius = "C", fahrenheit = "F"
+}
+
+func failableInitializerDemo() {
+    let someCreature = Animal(species: "Giraffe")
+    
+    if let giraffe = someCreature {
+        print("An animal was initialized with a species of \(giraffe.species)")
+    }
+    
+    let anonymousCreature = Animal(species: "")
+    
+    if anonymousCreature == nil {
+        print("The anonymous creature could not be initialized")
+    }
+    
+    let fahrenheitUnit = TemperatureUnit(symbol: "F")
+    if fahrenheitUnit != nil {
+        print("This is a defined temperature unit, so initialization succeeded.")
+    }
+    
+    let unknownUnit = TemperatureUnit(symbol: "X")
+    if unknownUnit == nil {
+        print("This is not a defined temperature unit, so initialization failed.")
+    }
+    
+    
+    let fahrenheitUnitChar = TemperatureUnitChar(rawValue: "F")
+    if fahrenheitUnitChar != nil {
+        print("This is a defined temperature unit, so initialization succeeded.")
+    }
+    
+    let unknownUnitChar = TemperatureUnitChar(rawValue: "X")
+    if unknownUnitChar == nil {
+        print("This is not a defined temperature unit, so initialization failed.")
+    }
+}
+
+//MARK: - Required Initializers
+
+//Write the required modifier before the definition of a class initializer to indicate that every subclass of the class must implement that initializer.
+
+class SomeNewClass {
+    required init() {
+        // initializer implementation goes here
+    }
+}
+
+//You do not write the override modifier when overriding a required designated initializer:
+
+class SomeNewSubClass: SomeClass {
+    required override init() {
+        
+    }
+}
+
+//MARK: - Setting a Default Property Value with a Closure or Function
+
+struct Chessboard {
+    let boardColors: [Bool] = {
+        var temporaryBoard = [Bool]()
+        var isBlack = false
+        for i in 1...8 {
+            for j in 1...8 {
+                temporaryBoard.append(isBlack)
+                isBlack = !isBlack
+            }
+            isBlack = !isBlack
+        }
+        return temporaryBoard
+    }()
+    func squareIsBlackAt(row: Int, column: Int) -> Bool {
+        return boardColors[(row * 8) + column]
+    }
+}
+
+func defaultPropValueDemo() {
+    let board = Chessboard()
+    print(board.squareIsBlackAt(row: 0, column: 1))
+    print(board.squareIsBlackAt(row: 7, column: 7))
+}
 

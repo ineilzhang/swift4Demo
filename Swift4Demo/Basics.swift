@@ -43,7 +43,7 @@ func basicsDemo(){
     //Hex
     let hexInteger = 0xef43
     
-    print("binary:\(binaryInteger)\noctal:\(octalInteger)\ndecimal:\(decimalInteger)")
+    print("binary:\(binaryInteger)\noctal:\(octalInteger)\ndecimal:\(decimalInteger)\nhex:\(hexInteger)")
     
     let decimalDouble = 12.1875
     let exponentDouble = 1.21875e1
@@ -133,7 +133,8 @@ func basicsDemo(){
     let implicitString: String = assumedString // no need for an exclamation mark
     
     if assumedString != nil {
-        print("\(assumedString) \(implicitString)")
+        print("possibleString = \(String(describing: possibleString)) forcedString = \(forcedString)")
+        print("assumedString = \(assumedString) implicitString = \(implicitString)")
     }
     
     if let definiteString = assumedString {
@@ -144,29 +145,31 @@ func basicsDemo(){
     
     func canThrowAnError() throws {
         // this function may or may not throw an error
-        var http404 = (404,"not found")
+        let http404 = (404,"not found")
         print(http404)
     }
     
     do {
         try canThrowAnError()
         // no error was thrown
+        print("no error was thrown")
     } catch {
         // an error was thrown
+        print("an error was thrown")
     }
     
     //MARK: - Assertions and Preconditions
     
     let age = 3
-    //assert(age >= 0, "A person's age can't be less than zero.")
+//    assert(age <= 0, "A person's age can't be less than zero.") //crash
     
     if age > 10 {
         print("You can ride the roller-coaster or the ferris wheel.")
     } else if age > 0 {
         print("You can ride the ferris wheel.")
     } else {
-        //    assertionFailure("A person's age can't be less than zero.")
+        assertionFailure("A person's age can't be less than zero.")
     }
     
-    precondition(age > 0, "Index must be greater than zero.")
+    precondition(age > 0, "Index must be greater than zero.") //crash
 }

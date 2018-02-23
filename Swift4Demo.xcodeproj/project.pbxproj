@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9AE60731FA02EB1006AE2B0 /* Deinitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE60721FA02EB1006AE2B0 /* Deinitialization.swift */; };
+		D9AE60751FA03377006AE2B0 /* OptionalChaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE60741FA03377006AE2B0 /* OptionalChaining.swift */; };
 		D9BAE6471F8CB6FE00BB78C1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAE6461F8CB6FE00BB78C1 /* main.swift */; };
 		D9BAE64E1F8CD04100BB78C1 /* Basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAE64D1F8CD04100BB78C1 /* Basics.swift */; };
 		D9BAE6501F8CD2CA00BB78C1 /* BasicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAE64F1F8CD2CA00BB78C1 /* BasicOperators.swift */; };
@@ -19,6 +21,9 @@
 		D9BAE65E1F9063C600BB78C1 /* ClassesAndStructrues.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAE65D1F9063C600BB78C1 /* ClassesAndStructrues.swift */; };
 		D9BAE6601F90933B00BB78C1 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAE65F1F90933B00BB78C1 /* Properties.swift */; };
 		D9BAE6621F94A5E700BB78C1 /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAE6611F94A5E700BB78C1 /* Methods.swift */; };
+		D9BAE86E1F98807E00BB78C1 /* Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAE86D1F98807E00BB78C1 /* Subscripts.swift */; };
+		D9BAE8701F988B2F00BB78C1 /* Inheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAE86F1F988B2F00BB78C1 /* Inheritance.swift */; };
+		D9BAE8721F989EF800BB78C1 /* Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAE8711F989EF800BB78C1 /* Initialization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +39,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D9AE60721FA02EB1006AE2B0 /* Deinitialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deinitialization.swift; sourceTree = "<group>"; };
+		D9AE60741FA03377006AE2B0 /* OptionalChaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalChaining.swift; sourceTree = "<group>"; };
 		D9BAE6431F8CB6FE00BB78C1 /* Swift4Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swift4Demo; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BAE6461F8CB6FE00BB78C1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D9BAE64D1F8CD04100BB78C1 /* Basics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics.swift; sourceTree = "<group>"; };
@@ -47,6 +54,9 @@
 		D9BAE65D1F9063C600BB78C1 /* ClassesAndStructrues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesAndStructrues.swift; sourceTree = "<group>"; };
 		D9BAE65F1F90933B00BB78C1 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		D9BAE6611F94A5E700BB78C1 /* Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
+		D9BAE86D1F98807E00BB78C1 /* Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscripts.swift; sourceTree = "<group>"; };
+		D9BAE86F1F988B2F00BB78C1 /* Inheritance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inheritance.swift; sourceTree = "<group>"; };
+		D9BAE8711F989EF800BB78C1 /* Initialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initialization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +101,11 @@
 				D9BAE65D1F9063C600BB78C1 /* ClassesAndStructrues.swift */,
 				D9BAE65F1F90933B00BB78C1 /* Properties.swift */,
 				D9BAE6611F94A5E700BB78C1 /* Methods.swift */,
+				D9BAE86D1F98807E00BB78C1 /* Subscripts.swift */,
+				D9BAE86F1F988B2F00BB78C1 /* Inheritance.swift */,
+				D9BAE8711F989EF800BB78C1 /* Initialization.swift */,
+				D9AE60721FA02EB1006AE2B0 /* Deinitialization.swift */,
+				D9AE60741FA03377006AE2B0 /* OptionalChaining.swift */,
 			);
 			path = Swift4Demo;
 			sourceTree = "<group>";
@@ -153,7 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9AE60751FA03377006AE2B0 /* OptionalChaining.swift in Sources */,
+				D9BAE86E1F98807E00BB78C1 /* Subscripts.swift in Sources */,
 				D9BAE6501F8CD2CA00BB78C1 /* BasicOperators.swift in Sources */,
+				D9AE60731FA02EB1006AE2B0 /* Deinitialization.swift in Sources */,
+				D9BAE8701F988B2F00BB78C1 /* Inheritance.swift in Sources */,
+				D9BAE8721F989EF800BB78C1 /* Initialization.swift in Sources */,
 				D9BAE65A1F8F1BFC00BB78C1 /* Closures.swift in Sources */,
 				D9BAE65C1F8F745200BB78C1 /* Enumerations.swift in Sources */,
 				D9BAE6561F8E18F400BB78C1 /* ControlFlow.swift in Sources */,

@@ -96,7 +96,7 @@ func operatorDemo(){
 //MARK: - Range Operators
     
     //Closed Range Operator
-    for index in 1...5 {
+    for index in (1...5).reversed() {
         print("\(index) times 5 is \(index * 5)")
     }
     
@@ -106,20 +106,20 @@ func operatorDemo(){
     for i in 0..<count {
         print("Person \(i + 1) is called \(names[i])")
     }
-    
+    print("\n")
     //One-Sided Ranges
     for name in names[2...] {
         print(name)
     }
-    
+    print("\n")
     for name in names[...2] {
         print(name)
     }
-    
+    print("\n")
     for name in names[..<2] {
         print(name)
     }
-    
+    print("\n")
 //MARK: - Logical Operators
     
     //Logical NOT Operator

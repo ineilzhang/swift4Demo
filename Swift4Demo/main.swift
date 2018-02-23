@@ -32,7 +32,7 @@ import Foundation
 //    print("min is \(bounds.min) and max is \(bounds.max)")
 //}
 
-//functionTypeDemo()
+functionTypeDemo()
 
 //funcTypeReturnDemo()
 
@@ -94,5 +94,13 @@ import Foundation
 
 //initializerInheritanceAndOverriding()
 
-designatedAndConvenienceInitializerDemo()
+//designatedAndConvenienceInitializerDemo()
+
+//failableInitializerDemo()
+
+//defaultPropValueDemo()
+
+//deinitDemo()
+
+//optionalChainingDemo()
 
